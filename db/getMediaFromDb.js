@@ -1,7 +1,7 @@
 
 const addMediaToDb = async (firestore, websiteId) => {
   return new Promise((resolve, reject) => {
-    const mediaRef = firestore.collection('websites').doc(websiteId).collection('media');
+    const mediaRef = firestore.collection('websites').doc(websiteId).collection('media').orderBy('createdAt', 'desc');
     mediaRef.get()
     .then(snapshot => {
       let media = [];
