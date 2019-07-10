@@ -1,5 +1,5 @@
 {
-  "name": "getmedia",
+  "name": "microservices-get-media",
   "version": "1.0.0",
   "description": "## 1. Deploy",
   "main": "index.js",
